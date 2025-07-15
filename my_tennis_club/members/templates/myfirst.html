@@ -1,0 +1,232 @@
+<!Doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        body{
+            background-color: rgba(175, 229, 250, 1);
+        }
+        .header{
+            background-color: rgba(38, 99, 128, 1);
+            
+        }
+        .title{
+            color:#95d3f0;
+            text-align: center;
+            font-family:Times New Roman;
+            font-size: 40px;
+        }
+        .nav{
+            display:block;
+            text-decoration:none;
+            color:white;
+        }
+        .nav ul{
+            list-style.none;
+            text-align:center;
+        }
+        .nav li{
+            display:inline;
+            margin:0 15px;
+            
+        }
+        .nav a{
+            font-size:20px;
+            text-decoration:none;
+            font-family:Helvetica, Arial, sans-serif;
+            color:white;
+            
+        }
+        .content{
+            background-color:rgba(105, 209, 243, 1);
+            padding:20px;
+            margin:auto;
+            border-radius:10px;
+            width:70%;
+            height:auto;
+            display:block;
+
+        }
+        .content h1{
+            text-align:center;
+        }
+        .content p{
+            text-align:justify;
+            font-family:Helvetica, Arial, sans-serif;
+        }
+        .content2{
+            background-color:rgba(105, 209, 243, 1);
+            padding:20px;
+            margin:auto;
+            border-radius:10px;
+            width:70%;
+            height:auto;
+            display:block;
+        }
+        .content2 h1{
+            text-align:center;
+        }
+        .content2 p{
+            text-align:justify;
+            font-family:Helvetica, Arial, sans-serif;
+        }
+        .estructura{
+        background-color:rgba(105, 209, 243, 1);
+            padding:20px;
+            margin:auto;
+            border-radius:10px;
+            width:70%;
+            height:auto;
+            display:block;
+        }
+
+        .estructura h1{
+            text-align:center;
+        }
+        .estructura p{
+            text-align:justify;
+            font-family:Helvetica, Arial, sans-serif;
+        }
+        .vb{
+            background-color:rgba(105, 209, 243, 1);
+            padding:20px;
+            margin:auto;
+            border-radius:10px;
+            width:70%;
+            height:auto;
+            display:block;
+            overflow:hidden;
+        }
+        .vb h1{
+            text-align:center;
+        }
+        .vb p{
+            text-align:justify;
+            font-family:Helvetica, Arial, sans-serif;
+        }
+        .ejemplos{
+            background-color:rgba(105, 209, 243, 1);
+            padding:20px;
+            margin:auto;
+            border-radius:10px;
+            width:70%;
+            height:auto;
+            display:block;
+        }
+        .ejemplos h2{
+            text-align:center;
+        }
+        .ejemplos p{
+            text-align:justify;
+            font-family:Helvetica, Arial, sans-serif;
+        }
+        .ventaja{
+            background-color:rgba(231, 247, 252, 1);
+            padding:10px;
+            margin:auto;
+            border-radius:10px;
+            width:40%;
+            height:auto;
+            position:relative;
+        
+
+        }
+        .desventaja{
+            background-color:rgba(231, 247, 252, 1);
+            padding:10px;
+            margin:auto;
+            border-radius:10px;
+            width:40%;
+            height:auto;
+            position:relative;
+            
+
+        }
+        .div3{
+            display:flex ;
+
+        }
+
+    </style>
+    <title>Django</title>
+</head>
+<body>
+    <header class="header">
+    <h1 class="title">El mundo  de Django</h1>
+    <nav class="nav">
+        <ul>
+            <li><a href="#que-es-django">¿Que es Django?</a></li>
+            <li><a href="#como-funciona-django">¿Como funciona Django?</a></li>
+            <li><a href="#cual-es-su-estructura">¿Cual es su Estructura?</a></li>
+            <li><a href="#ventajas">Ventajas</a></li>
+            <li><a href="#desventajas">Desventajas</a></li>
+            <li><a href="#ejemplos-en-programacion">Ejemplos en programacion</a></li>
+    </nav>
+        </header>
+    <div class="content">
+    <h1 id="que-es-django">¿Que es Django?</h1>
+    <img src ="data:image/jpeg;base64,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" class="im" alt="Django logo" width="300" height="200" style= "display:block; margin:auto;">
+    <p>Django es un framework de Python que facilita la creación de sitios web utilizando Python.Django se encarga de las cosas difíciles para que usted pueda concentrarse en crear sus aplicaciones web.Django enfatiza la reutilización de componentes, también conocida como DRY (Don't Repeat Yourself), y viene con características listas para usar como sistema de inicio de sesión, conexión de base de datos y operaciones CRUD (Crear Leer Actualizar Eliminar).</p>
+    </div>
+    <br>
+    <div class="content2">
+    <h1 id="como-funciona-django">¿Como funciona Django?</h1>
+    <p>Django sigue el patron de diseño MVT(Modelo,Vista,Controlador)</p>
+    <ul>
+        <li><strong>Modelo:</strong><a>Los datos que desea presentar, generalmente datos de una base de datos.</a></li>
+        <li><strong>Vista:</strong><a>un controlador de solicitudes que devuelve la plantilla y el contenido relevantes, según la solicitud del usuario.</a></li>
+        <li><strong>Plantilla:</strong><a>un archivo de texto (como un archivo HTML) que contiene el diseño de la página web, con lógica sobre cómo mostrar los datos.</a></li>
+    </div>
+    <br>
+    <div class="estructura">
+    <h1 id="cual-es-su-estructura">¿Cual es su Estructura?</h1>
+    <img src= "data:image/png;base64,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" class="image" alt="estructura" width="300" height="200" style= "display:block; margin:auto;">
+    <h2>Modelo</h2>
+    <p>El modelo proporciona datos de la base de datos.En Django, los datos se entregan como un Mapeo Relacional de Objetos (ORM), que es una técnica diseñada para facilitar el trabajo con bases de datos.La forma más común de extraer datos de una base de datos es SQL. Un problema con SQL es que se requiere un buen conocimiento de la estructura de la base de datos para poder trabajar con ella.Django, con ORM, facilita la comunicación con la base de datos, sin tener que escribir sentencias SQL complejas.Los modelos normalmente se encuentran en un archivo llamado models.py.
+    <h2>Vista</h2>
+    <p>Una vista es una función o método que toma solicitudes http como argumentos, importa los modelos relevantes, descubre qué datos enviar a la plantilla y devuelve el resultado final.Las vistas normalmente se encuentran en un archivo llamado views.py.</p>
+    <h2>Plantilla</h2>
+    <p>Una plantilla es un archivo donde se describe cómo se debe representar el resultado.Las plantillas suelen ser archivos .html, con código HTML que describe el diseño de una página web, pero también pueden estar en otros formatos de archivo para presentar otros resultados, pero nos concentraremos en los archivos html.Las plantillas de una aplicación se encuentran en una carpeta llamada templates.</p>
+    <h2>URL</h2>
+    <p>Django también proporciona una forma de navegar por las diferentes páginas de un sitio web.Cuando un usuario solicita una URL, Django decide a qué vista la enviará.Esto se hace en un archivo llamado urls.py.</p>
+    </div>
+    <br>
+    <div class="vb">
+    <div class="div3">
+    <div class="ventaja">
+    <h2 id="ventajas">Ventajas</h2>
+    <ul>
+        <li>Rapido Desarrollo</li>
+        <li>Seguridad Integrada</li>
+        <li>Potente panel de administracion</li>
+        <li>Facilidad de aprendizaje</li>
+    </ul>
+    </div>
+    <br>
+    <div class="desventaja">
+    <h2 id="desventajas">Desventajas</h2>
+    <ul>
+        <li>Rendimiento mas lento para ciertas aplicaciones</li>
+        <li>Su aprendizaje es mas complejo</li>
+        <li>Requiere una gran cantidad de recursos para proyectos grandes y complejos</li>
+        <li>Tiene una gran cantidad de depemdencias lo que lo puede dificultar su instalacion y configuracion en algunos entornos</li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    <br>
+    <div class="ejemplos">
+    <h2 id="ejemplos-en-programacion">Ejemplos en programacion</h2>
+    <p>Algunas de las aplicaciones que se crearon con Django son:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/srkMntDfil4?si=YYAROYi8ZKeXZqGz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <ul>
+        <li>Instagram <br> <br><i class="bi bi-instagram" ></i></li>
+        <br> 
+        <li>Spotify <br> <br><i class="bi bi-spotify" ></i></li>
+        <br> 
+        <li>Youtube<br> <br><i class="bi bi-youtube"></i></li>
+        <br> 
+        <li>Pinterest<br> <br><i class="bi bi-pinterest"></i></li>
+    </div>
+</body>
+</html>
