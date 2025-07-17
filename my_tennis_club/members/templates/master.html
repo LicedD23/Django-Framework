@@ -1,0 +1,89 @@
+<DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %} {% endblock %}</title>
+    <style>
+        body{
+            background-color:#E5E1E8 ;
+        }
+        .header{
+            background-color: rgba(2, 5, 12, 1);
+            
+        }
+        h1{
+            
+            color: #4389a5ff;
+            text-align: center;
+            font-family:Times New Roman;
+            font-size: 40px;
+        }
+        p{
+            text-align: center;
+            font-family:Times New Roman;
+            font-size: 30px;
+        }
+        .members{
+            text-align: center;
+            font-family:Times New Roman;
+            font-size: 30px;
+        }
+        .container{
+            
+            text-decoration:none;
+            color:white;
+            max-width:700%;
+            width:50%;
+            height:70%;
+            display:block;
+            margin:auto;
+            border-radius:30px;
+            background-color:#E5E1E8 ;
+
+
+        }
+        .container ul{
+            list-style-type:none;
+            text-align:center;
+            color:black;
+        }
+        .container li{
+
+            
+        }
+        .container a{
+            font-size:20px;
+            text-decoration:none;
+            font-family:Helvetica, Arial, sans-serif;
+            color:black;
+            display:block;
+            box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+            padding:10px;
+            border-radius:5px;
+            
+        }
+        .container a:hover{
+            color:blue;
+            
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="header">
+    <h1 class="h1">Mi Club de Tenis</h1>
+    </div>
+    <br>
+    <div>
+    <p>Bienvenido  a nuestro club de tenis Acontinuacion se muestran los miembros de nuestro club:<p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3xVFckD2WDGXTIEyErUxlJorCBVb3iF5uRQ&s" alt="Tennis Image" width="400" height="350" class="img" style="Display:block; margin:auto;"></img>
+    </div>
+    
+    {% block content %}
+    {% endblock %}
+    <footer class="footer" style="text-align:center; background-color:rgba(2, 5, 12, 1); color:white; padding:0.00010px; font-size: 10px;">
+        <p>Copyright &copy; 2025 My Tennis Club</p>
+    </footer>
+</body>
+</html>
